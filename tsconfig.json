@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "target": "es2018",
+    "module": "commonjs",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "declaration": true,
+    "baseUrl": "src",
+    "paths": {
+      "Config": ["config.ts"],
+      "Types": ["types.ts"],
+      "Util/*": ["util/*"],
+      "Test/*": ["test/*"]
+    }
+  },
+
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "test/_test-setup.ts"]
+}

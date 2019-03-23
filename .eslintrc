@@ -1,0 +1,98 @@
+module.exports = {
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: "./tsconfig.json",
+    tsconfigRootDir: "./",
+  },
+  extends: [
+    "plugin:@typescript-eslint/recommended",
+    // "prettier",
+    "prettier/@typescript-eslint",
+    // "prettier/react",
+    // "eslint-config-prettier",
+    // "plugin:react/recommended",
+  ],
+  plugins: ["@typescript-eslint"],
+  env: {
+    es6: true,
+    node: true,
+    "shared-node-browser": true,
+    jest: true,
+    serviceworker: true,
+  },
+  rules: {
+    // "prettier/prettier": "error",
+    indent: "off",
+    "@typescript-eslint/indent": ["error", 2],
+    quotes: ["warn", "backtick"],
+    "comma-dangle": ["error", "always-multiline"],
+    "arrow-parens": ["warn", "as-needed", { requireForBlockBody: true }],
+    // "prettier/prettier": "warn",
+  },
+};
+
+/*
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: 'module',
+    ecmaFeatures: {
+      arrowFunctions: false,
+      experimentalObjectRestSpread: true,
+    },
+  },
+  env: {
+    es6: true,
+    browser: false,
+    node: true,
+  },
+  plugins: [
+    '@typescript-eslint',
+    //   'no-loops',
+    //   'promise',
+    //   'security',
+    //   'jest',
+    //   'unicorn',
+    //   'cleanjs',
+    //   'const-immutable'
+  ],
+  rules: {
+    quotes: ['error', 'backtick'],
+    semi: ['error', 'always'],
+    'prettier/prettier': 'error',
+    'no-unused-vars': 'warn',
+    'no-console': 'off',
+    'no-debugger': 'warn',
+    'no-var': 'error',
+    'no-param-reassign': 'error',
+    'no-undef': 'error',
+    'no-trailing-spaces': 'warn',
+    'eol-last': 'off',
+    'no-underscore-dangle': 'warn',
+    'no-alert': 'error',
+    'no-lone-blocks': 'warn',
+    'arrow-parens': 'error',
+    'no-loops/no-loops': 'error',
+    'promise/prefer-await-to-then': 'error',
+    'promise/prefer-await-to-callbacks': 'error',
+    'security/detect-non-literal-fs-filename': 'off',
+    'const-immutable/no-mutation': 'error',
+    'fp/no-throw': 'off',
+    'better/no-new': 'off',
+    'fp/no-nil': 'off',
+    'fp/no-unused-expression': 'off',
+    'better/explicit-return': 'off',
+    'security/detect-object-injection': 'off',
+  },
+    "extends": [
+      'plugin:@typescript-eslint/recommended',
+      'plugin:prettier/recommended',
+    //   'eslint:recommended',
+    //   'plugin:promise/recommended',
+    //   'plugin:security/recommended',
+    //   'plugin:jest/recommended',
+    //   'plugin:unicorn/recommended',
+    //   'cleanjs'
+    ],
+  }
+    */
