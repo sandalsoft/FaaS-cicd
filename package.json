@@ -1,12 +1,17 @@
 {
   "name": "faascicd",
   "description": "Description of something or other",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "UNLICENSED",
   "files": [
     "dist"
   ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc",
@@ -18,6 +23,8 @@
     "commit": "git-cz"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
     "@commitlint/prompt": "^7.5.0",
     "@pika/plugin-ts-standard-pkg": "^0.3.9",
     "@semantic-release/changelog": "^3.0.2",
@@ -37,6 +44,7 @@
     "husky": "^1.3.1",
     "jest": "23.6.0",
     "jest-sourcemaps": "^1.0.1",
+    "lint-staged": "^8.1.5",
     "rimraf": "^2.6.3",
     "semantic-release": "^15.13.3",
     "ts-jest": "^23.10.5",
@@ -59,5 +67,21 @@
   },
   "publishConfig": {
     "access": "restricted"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
