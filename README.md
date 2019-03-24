@@ -1,3 +1,5 @@
 # FaaS-cicd
 
 If you can read this, I suck at updating READMEs
+
+https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiQ1VKSG5qa3ljL0Z5ampPaUJ2MWpCSGprTndvcy9tQmJzNkFIMmZzalYyMWF2S09YZnFpOWNVSHJWSHhWQy9Gc2toelJIYmc4cVhWQzFhZjFUUEJXMzZJPSIsIml2UGFyYW1ldGVyU3BlYyI6IjV6SVN0VENxSlFyZHBRS2kiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master
