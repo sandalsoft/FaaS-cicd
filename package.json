@@ -1,7 +1,7 @@
 {
   "name": "faascicd",
   "description": "Description of something or other",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "UNLICENSED",
   "files": [
