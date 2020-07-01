@@ -42,7 +42,7 @@
     "eslint-config-prettier": "^4.0.0",
     "git-cz": "^3.0.0",
     "husky": "^1.3.1",
-    "jest": "23.6.0",
+    "jest": "26.1.0",
     "jest-sourcemaps": "^1.0.1",
     "lint-staged": "^8.1.5",
     "rimraf": "^2.6.3",
